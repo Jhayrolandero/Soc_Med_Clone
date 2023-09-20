@@ -22,7 +22,7 @@ if(!empty($_SESSION["username"])){
     <div class="container-fluid d-flex justify-content-center align-items-center example m-0 p-0 full-height-container bg-dark example">
                 <div class="col-md-3 custom-bg full-height-col">
                     <div class="col-md-12 p-3 ">
-                        <form method="post" class="row" id="login">
+                        <form method="post" class="row was-validated" id="login">
                             <?=$user_obj->show_login();?>
                         </form>
                         <form method="post" id="register">
@@ -32,7 +32,11 @@ if(!empty($_SESSION["username"])){
                 </div>
                 <div class="col-9">
                     <div class="login-bg">
-                        <img src="assets/images/login-bg.jpeg" alt="">
+                        <img src="assets/images/login-bg.jpeg" alt="background-image">
+                        <div class="text-overlay">
+                            <h4 class="display-1 p-2"><bold>GeekHub</bold></h4>
+                            <smal class="display-6">A place to show your enthusiasm</smal>
+                        </div>
                     </div>
                 </div>
         </div>
